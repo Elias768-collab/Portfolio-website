@@ -1,0 +1,136 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: black;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #111;
+    color: white;
+}
+
+.hero button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: orange;
+    cursor: pointer;
+}
+
+/* SECTIONS */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* SKILLS */
+.skills ul {
+    list-style: none;
+}
+
+.skills li {
+    margin: 10px 0;
+}
+
+/* PROJECTS */
+.project {
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+.project img {
+    width: 100%;   /* FIXED (no overflow now) */
+    border-radius: 10px;
+}
+
+.project a {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+    color: blue;
+}
+
+/* CONTACT */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input,
+form textarea {
+    width: 90%;
+    max-width: 400px;
+    margin: 10px;
+    padding: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
+}
+
+/* 📱 RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+    
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .hero {
+        padding: 40px 10px;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+}
